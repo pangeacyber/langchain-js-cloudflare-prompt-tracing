@@ -8,7 +8,7 @@ import { AuditService, PangeaConfig } from 'pangea-node-sdk';
 export class PangeaAuditCallbackHandler extends BaseTracer {
   name = 'pangea_audit_callback_handler';
 
-  private client;
+  private readonly client;
 
   constructor(
     token: string,
